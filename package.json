@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build", 
-    "deploy": "gh-pages -d dist" 
+    "deploy": "gh-pages -d dist -u \"github-actions-bot <support+actions@github.com>\" -r https://x-access-token:${GITHUB_TOKEN}@github.com/juanda99/emaus-tercer-tiempo.git"
   },
   "dependencies": {
     "firebase": "^10.7.1",
